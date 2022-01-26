@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Project</title>
+</head>
+
+<body>
+
+    
+    {{>navbarNew}}
+    <!-- main header -->
+    <div class="container-fluid register my-auto">
+       <form class="col-5 m-auto bg-light p-5 rounded">
+           <h3 class="mx-auto text-center border-bottom pb-3">Login</h3>
+            <div class="mb-3 email ">
+                <label for="exampleInputEmail1" class="form-label fs-1">Email address</label>
+                <input type="email" value="" class="form-control" id="log_email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text ">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 pass">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" value="" class="form-control" id="log_password">
+            </div>
+           
+            <button type="button" id="login" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- foooter code -->
+    {{>footer}}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
